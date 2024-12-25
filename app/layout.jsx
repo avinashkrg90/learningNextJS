@@ -1,5 +1,8 @@
 
 import '@styles/global.css'
+import '@components/Nav'
+import '@components/Provider'
+import Nav from '@components/Nav'
 
 export const metadata = {
     title: 'Test Application',
@@ -15,6 +18,7 @@ const RootLayout = ({children}) => {
             </div>
 
             <main className='app'>
+                <Nav /> 
                 {children}
             </main>
         </body>
